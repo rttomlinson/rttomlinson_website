@@ -1,0 +1,177 @@
+
+
+body {
+  color: #fff8f0
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+label {
+  color: gray;
+}
+
+input,
+textarea {
+  display: block;
+}
+/*Consider using something else to target these elements */
+
+#message {
+  height: 120px;
+}
+
+.footer-social-buttons {
+  height: 38px;
+  border-radius: 50%;
+}
+
+.footer-social-buttons > i {
+  vertical-align: middle;
+}
+
+footer {
+  background-color: #5f3d91;
+  color: #fff8f0;
+  -webkit-box-shadow: 1px -2px 15px 1px rgba(0,0,0,0.34);
+-moz-box-shadow: 1px -2px 15px 1px rgba(0,0,0,0.34);
+box-shadow: 1px -2px 15px 1px rgba(0,0,0,0.34);
+  position:relative;
+  padding-top: 20px;
+}
+
+.contact-button {
+  width: 20%;
+  font-size: 16px;
+  min-width: 100px;
+  
+}
+
+#top-navbar {
+  -webkit-box-shadow: 10px 10px 24px 2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 10px 10px 24px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 10px 24px 2px rgba(0, 0, 0, 0.4);
+}
+
+#email-contact-button {
+  height:inherit;
+  font-size: 18px;
+}
+/* Set width */
+
+#email-contact-button-holder {
+  height: 50px;
+  font-size: 18px;
+  display: none;
+}
+/* Hide contact button for now since it does nothing. Eventually add modal pop-up */
+
+.content-section:first-child {
+  background-color: #5f3d91;
+}
+
+.content-section {
+  background-color: #ac93d2;
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+
+.project-holder {
+  margin-bottom: 50px;
+}
+.project-holder:last-child {
+  margin-bottom: 0px;
+}
+
+
+
+.display-inline-block {
+  display: inline-block;
+}
+
+#profile-section {
+  position: relative;
+  -webkit-box-shadow: 10px 10px 13px -2px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 10px 10px 13px -2px rgba(0, 0, 0, 0.22);
+  box-shadow: 10px 10px 13px -2px rgba(0, 0, 0, 0.22);
+}
+
+#collapsed-menu-button {
+  color: #5f3d91;
+  width: 40px;
+  /*Consider changing this to something dynamic if crowding occurs on xs devices*/
+}
+
+#contact-form {
+  color: #433f9e;
+  width: 96%;
+  max-width: 560px;
+}
+
+#main-content {
+  margin-top: 56px;
+}
+
+#main-image {
+  max-width: 250px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display:none;
+}
+
+#contact-section > .col-xs-12:first-child {
+  padding-top: 20px;
+}
+.soft-divider {
+  margin: 0px;
+}
+
+.divider {
+  text-align: center;
+  border-top: solid 3px;
+  width: 75%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.divider::after {
+  background-color: #ac93d2;
+  content: "</>";
+  font-size: 2em;
+  position: relative;
+  top: -.8em;
+  padding: 0 .25em;
+}
+
+#profile-divider::after {
+  background-color: #5f3d91;
+}
+
+@media (min-width: 768px) {
+  #main-content {
+    margin-top: 50px;
+  }
+  #main-image {
+    display: initial;
+  }
+  #profile-text {
+    padding: 70px;
+  }
+}
+
+
+/* Color pallete from http://colorpalettes.net/color-palette-131/ 
+#fff8f0 (Lightest)
+#bb89c6
+#7c7cb0
+#5f3d91
+#433f9e (Darkest)
+
+#ac93d2
+#baa5d9
+*/
