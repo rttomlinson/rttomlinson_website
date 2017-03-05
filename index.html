@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="public/fonts/flaticon.css">    
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee:400i" rel="stylesheet">    
     <link rel="stylesheet" href="public/css/main.css" type="text/css">
     </head>
     <body>
@@ -25,7 +25,8 @@
           <div class="collapse navbar-collapse" id="page-selection-menu">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#profile-section">Profile</a></li>
-              <li><a href="#project-section">Projects</a></li>                 <li><a href="#contact-section">Contact Me</a></li>
+              <li><a href="#project-section">Projects</a></li>
+              <li><a href="#contact-section">Contact Me</a></li>
             </ul>
           </div> <!-- /.navbar-collapse -->
           <!-- End Buttons for page and for toggling -->
@@ -35,37 +36,45 @@
       <main>
         <!-- Main Content -->
         <section class="container-fluid"><!--Landing section-->
-          <i class="flaticon-arrows-2"></i><p>Who I am</p>
-          <p>Where we're going</p>
-        </section><!--End landing section-->
-        <section class="container-fluid"><!-- Profile Section -->
-            <div class="" id="">
-              <p id="profile-blub">Developer, Dietitian, Climber. Passionate about technology, health, and keeping it simple.</p>
+          <div class="display-flex-column justify-around content text-center">
+            <div>
+              <h2 class="text-deemphasize">WHO</h4>
+              <p class="content-text">Renzo Tomlinson, RD</p>
             </div>
-        </section><!-- End Profile Section -->
+            <div>
+              <h2 class="text-deemphasize">WHAT</h4>
+              <p class="content-text">Software Developer & Dietitian</p>
+            </div>
+            <div>
+              <h2 class="text-deemphasize">WHY</h4>
+              <p class="content-text">Technology, Health, and keeping it simple</p>
+            </div>
+          </div>
+        </section><!--End landing section-->
+        <hr>
         <section class="container-fluid"><!-- Projects Section -->
+          <h2>Latest Developments</h2>
           <div class="row" id=""> 
-            <h2>Projects</h2>
             <div id="container-for-projects">
               <div class="col-xs-12 col-sm-6 project-holder">
-                <img class="center-block img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
+                <img class="margin-bottom-20px padding-20px img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
               </div>
               <div class="col-xs-12 col-sm-6 project-holder">
-                <img class="center-block img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
+                <img class="margin-bottom-20px padding-20px img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
               </div>
               <div class="col-xs-12 col-sm-6 project-holder">
-                <img class="center-block img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
+                <img class="margin-bottom-20px padding-20px img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
               </div>
              <div class="col-xs-12 col-sm-6 project-holder">
-                <img class="center-block img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
+                <img class="margin-bottom-20px padding-20px img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
               </div>
             </div>
           </div> <!-- End Projects Section -->
         </section>
+        <hr>
         <section class=container-fluid><!-- Start Contact Section -->
+          <h2>Contact Me</h2>
           <div class="row content-section" id="contact-section"> 
-            <h2>Contact Me</h2>
-            <hr class="divider">
             <!-- Currently Hidden --><div class="col-xs-12" id="email-contact-button-holder">
               <button class="btn btn-default contact-button" id="email-contact-button"><i class="fa fa-rocket" aria-hidden="true"></i>Contact Now!</button>
             </div> <!-- End Hidden -->

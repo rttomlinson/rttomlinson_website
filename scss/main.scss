@@ -1,8 +1,23 @@
-$background-color: #fff8f0;
+@mixin ABeeZee {
+  font-family: 'ABeeZee', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include ABeeZee;
+}
+
+$background-color: #FFFFFA;
+$content-background-color: #BD5CF3;
+$content-text-color: #2D081F;
 
 body {
   margin-top: 56px;
-  color: #000
+  color: #000;
+  background-color: $background-color;
+}
+
+img {
+  background-color: $content-background-color;
 }
 
 section:first-child {
@@ -18,6 +33,32 @@ section:first-child {
   justify-content: center;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
+.content {
+  height: 75vh;
+}
+
+.content-text {
+  color: $content-text-color;
+  display:inline-block;
+  padding:10px;
+  font-size: 18px;
+}
+
+.text-deemphasize {
+  color: #aaa;
+}
+
+.padding-20px {
+  padding: 20px;
+}
+
+.margin-bottom-20px {
+  margin-bottom: 20px;
+}
 
 /* Color pallete from http://colorpalettes.net/color-palette-131/ 
 #fff8f0 (Lightest)
