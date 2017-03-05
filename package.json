@@ -1,0 +1,36 @@
+{
+  "name": "rttomlinson.github.io",
+  "version": "1.0.0",
+  "description": "Personal landing page for Renzo Tomlinson",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rttomlinson/rttomlinson.github.io.git"
+  },
+  "keywords": [
+    "Renzo",
+    "Tomlinson",
+    "Projects",
+    "Portfolio",
+    "Developer",
+    "Web",
+    "Software",
+    "Engineer"
+  ],
+  "author": "Renzo Tomlinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rttomlinson/rttomlinson.github.io/issues"
+  },
+  "homepage": "https://github.com/rttomlinson/rttomlinson.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.0"
+  },
+  "scripts": {
+    "build-css" : "./bin/build-css",
+    "watch-css" : "./bin/watch-css"
+  }
+}

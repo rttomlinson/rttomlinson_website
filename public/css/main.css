@@ -1,0 +1,72 @@
+/*
+    Flaticon icon font: Flaticon
+    Creation date: 05/03/2017 11:41
+    */
+@font-face {
+  font-family: "Flaticon";
+  src: url("./public/fonts/Flaticon.eot");
+  src: url("./public/fonts/Flaticon.eot?#iefix") format("embedded-opentype"), url("./public/fonts/Flaticon.woff") format("woff"), url("./public/fonts/Flaticon.ttf") format("truetype"), url("./public/fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./public/fonts/Flaticon.svg#Flaticon") format("svg"); } }
+
+.fi:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+.flaticon-001-arrows-3:before {
+  content: "\f100"; }
+
+.flaticon-002-arrows-2:before {
+  content: "\f101"; }
+
+.flaticon-003-arrows-1:before {
+  content: "\f102"; }
+
+.flaticon-004-arrows:before {
+  content: "\f103"; }
+
+.flaticon-005-direction:before {
+  content: "\f104"; }
+
+.flaticon-006-arrow:before {
+  content: "\f105"; }
+
+body {
+  margin-top: 56px;
+  color: #000; }
+
+section:first-child {
+  height: 75vh; }
+
+.display-flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.justify-center {
+  justify-content: center; }
+
+/* Color pallete from http://colorpalettes.net/color-palette-131/ 
+#fff8f0 (Lightest)
+#bb89c6
+#7c7cb0
+#5f3d91
+#433f9e (Darkest)
+
+#ac93d2
+#baa5d9
+*/

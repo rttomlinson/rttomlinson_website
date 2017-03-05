@@ -1,0 +1,31 @@
+$background-color: #fff8f0;
+
+body {
+  margin-top: 56px;
+  color: #000
+}
+
+section:first-child {
+  height:75vh;
+}
+
+.display-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+
+/* Color pallete from http://colorpalettes.net/color-palette-131/ 
+#fff8f0 (Lightest)
+#bb89c6
+#7c7cb0
+#5f3d91
+#433f9e (Darkest)
+
+#ac93d2
+#baa5d9
+*/

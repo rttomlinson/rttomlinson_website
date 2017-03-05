@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="public/fonts/flaticon.css">    
+    <link rel="stylesheet" href="public/css/main.css" type="text/css">
     </head>
     <body>
       <!-- Start Navbar -->
@@ -31,70 +32,71 @@
         </div> <!-- /.container-fluid-->
       </nav>
       <!-- End Navbar -->
-      <!-- Main Content -->
-      <div class="container-fluid" id="main-content">
-      <!-- Profile Section -->
-        <div class="row content-section" id="profile-section">
-          <div class="col-sm-4 col-sm-push-8">
-            <img class="img-responsive img-circle center-block" id="main-image" src="http://res.cloudinary.com/dsuajh1lm/image/upload/c_crop,h_1536,w_1536/v1480924721/IMG_20140406_173615_jdyoqx.jpg" alt="Image of the creator of the site">
+      <main>
+        <!-- Main Content -->
+        <section><!--Landing section-->
+          <i class="flaticon-arrows-2"></i><p>Who I am</p>
+          <p>Where we're going</p>
+        </section><!--End landing section-->
+        <section><!-- Profile Section -->
+
+          <div class="container-fluid" id="">
+            <div class="" id="">
+              <p id="profile-blub">Developer, Dietitian, Climber. Passionate about technology, health, and keeping it simple.</p>
+            </div>
           </div>
-          <div class="col-sm-8 col-sm-pull-4  text-center" id="profile-text">
-            <h3>Web Developer, Registered Dietitian</h3>
-            <hr class="divider" id="profile-divider">
-            <p id="profile-blub">I like TDD and MEAN Stack. Let's build some apps together.</p>
-          </div>
-        </div> <!-- End Profile Section -->
-        <div class="row content-section" id="project-section"> <!-- Projects Section -->
-          <h2>Projects</h2>
+        </section><!-- End Profile Section -->
+        <section><!-- Projects Section -->
+          <div class="row" id=""> 
+            <h2>Projects</h2>
+            <div id="container-for-projects">
+              <div class="col-xs-12 col-sm-6 project-holder">
+                <img class="center-block img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
+              </div>
+              <div class="col-xs-12 col-sm-6 project-holder">
+                <img class="center-block img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
+              </div>
+              <div class="col-xs-12 col-sm-6 project-holder">
+                <img class="center-block img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
+              </div>
+             <div class="col-xs-12 col-sm-6 project-holder">
+                <img class="center-block img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
+              </div>
+            </div>
+          </div> <!-- End Projects Section -->
+          </section>
+          <section><!-- Start Contact Section -->
+          <div class="row content-section" id="contact-section"> 
+            <h2>Contact Me</h2>
             <hr class="divider">
-          <div id="container-for-projects">
-            <div class="col-xs-12 col-sm-6 project-holder">
-              <img class="center-block img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
+            <!-- Currently Hidden --><div class="col-xs-12" id="email-contact-button-holder">
+              <button class="btn btn-default contact-button" id="email-contact-button"><i class="fa fa-rocket" aria-hidden="true"></i>Contact Now!</button>
+            </div> <!-- End Hidden -->
+            <div class="col-xs-12">
+              <form action="#" class="center-block well" id="contact-form">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="text" name="email" class="form-control" id="email" placeholder="email" aria-describeby="emailhelp">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea name="message" class="form-control" maxlength="500" form="contact-form" id="message" placeholder="message" aria-describeby="messagehelp"></textarea>
+                </div>
+                <div class="text-right">
+                  <input type="submit" class="btn btn-primary" value="Send!">
+                </div>
+              </form>
             </div>
-            <div class="col-xs-12 col-sm-6 project-holder">
-              <img class="center-block img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
+            <div class="col-xs-12 text-center">
+              <p>
+              See more at...
+              </p>
+              <button class="btn btn-default contact-button"><i class="fa fa-github"  aria-hidden="true"></i>GitHub</button>
+              <button class="btn btn-default contact-button"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</button>
             </div>
-            <div class="col-xs-12 col-sm-6 project-holder">
-              <img class="center-block img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
-            </div>
-           <div class="col-xs-12 col-sm-6 project-holder">
-              <img class="center-block img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
-            </div>
-          </div>
-        </div> <!-- End Projects Section -->
-        <div class="row content-section"> <!--Soft divider -->
-          <hr class="soft-divider">
-        </div>
-        <div class="row content-section" id="contact-section"> <!-- Start Contact Section -->
-          <h2>Contact Me</h2>
-          <hr class="divider">
-          <!-- Currently Hidden --><div class="col-xs-12" id="email-contact-button-holder">
-            <button class="btn btn-default contact-button" id="email-contact-button"><i class="fa fa-rocket" aria-hidden="true"></i>Contact Now!</button>
-          </div> <!-- End Hidden -->
-          <div class="col-xs-12">
-            <form action="#" class="center-block well" id="contact-form">
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" name="email" class="form-control" id="email" placeholder="email" aria-describeby="emailhelp">
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea name="message" class="form-control" maxlength="500" form="contact-form" id="message" placeholder="message" aria-describeby="messagehelp"></textarea>
-              </div>
-              <div class="text-right">
-                <input type="submit" class="btn btn-primary" value="Send!">
-              </div>
-            </form>
-          </div>
-          <div class="col-xs-12 text-center">
-            <p>
-            See more at...
-            </p>
-            <button class="btn btn-default contact-button"><i class="fa fa-github"  aria-hidden="true"></i>GitHub</button>
-            <button class="btn btn-default contact-button"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</button>
-          </div>
-        </div> <!--End Contact Section -->
-      </div> <!-- End Main Content -->
+          </div> 
+        </section><!--End Contact Section -->
+      </main>
       <footer>
         <div class="container-fluid">
           <div class="row text-center">
@@ -115,6 +117,7 @@
         <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/ccb44d2ec3.js"></script>
+    <script src="main.js" rel="stylesheet" type="text/javascript"></script>
     </body>
 </html>
     
