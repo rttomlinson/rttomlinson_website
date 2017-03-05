@@ -7,7 +7,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=ABeeZee:400i" rel="stylesheet">    
-    <link rel="stylesheet" href="public/css/main.css" type="text/css">
+    <link rel="stylesheet" href="public/css/main.css?version=1.5" type="text/css">
     </head>
     <body>
       <!-- Start Navbar -->
@@ -36,39 +36,38 @@
       <main>
         <!-- Main Content -->
         <section class="container-fluid"><!--Landing section-->
-          <div class="display-flex-column justify-around content text-center">
+          <div class="display-flex-column justify-around content text-center content-wrapper">
             <div>
               <h2 class="text-deemphasize">WHO</h4>
               <p class="content-text">Renzo Tomlinson, RD</p>
             </div>
             <div>
               <h2 class="text-deemphasize">WHAT</h4>
-              <p class="content-text">Software Developer & Dietitian</p>
+              <p class="content-text">Software Developer, Dietitian, Minimalist</p>
             </div>
             <div>
               <h2 class="text-deemphasize">WHY</h4>
-              <p class="content-text">Technology, Health, and keeping it simple</p>
+              <p class="content-text">Technology, Health, and Simplicity</p>
             </div>
           </div>
         </section><!--End landing section-->
         <hr>
         <section class="container-fluid"><!-- Projects Section -->
           <h2>Latest Developments</h2>
-          <div class="row" id=""> 
-            <div id="container-for-projects">
-              <div class="col-xs-12 col-sm-6 project-holder">
-                <img class="margin-bottom-20px padding-20px img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
+            <div class="row container-for-projects">
+              <div class="col-md-4 project-holder">
+                <a type="button" data-toggle="modal" data-target="#myModal">
+                  <img class="img-responsive center-block highlightable" src=http://placehold.it/400x200 alt="Placeholder image">
+                </a>
               </div>
-              <div class="col-xs-12 col-sm-6 project-holder">
-                <img class="margin-bottom-20px padding-20px img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
-              </div>
-              <div class="col-xs-12 col-sm-6 project-holder">
-                <img class="margin-bottom-20px padding-20px img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
-              </div>
-             <div class="col-xs-12 col-sm-6 project-holder">
-                <img class="margin-bottom-20px padding-20px img-responsive" src=http://placehold.it/400x200 alt="Placeholder image">
-              </div>
-            </div>
+              <div class="col-md-4 project-holder">
+                <a type="button" data-toggle="modal" data-target="#myModal">
+                  <img class="img-responsive center-block highlightable" src=http://placehold.it/400x200 alt="Placeholder image">
+                </a>              </div>
+              <div class="col-md-4 project-holder">
+                <a type="button" data-toggle="modal" data-target="#myModal">
+                  <img class="img-responsive center-block highlightable" src=http://placehold.it/400x200 alt="Placeholder image">
+                </a>              </div>
           </div> <!-- End Projects Section -->
         </section>
         <hr>
@@ -118,6 +117,31 @@
           </div>
         </div>
       </footer>
+      
+            <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal------------------->
+      
+      
+      
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->

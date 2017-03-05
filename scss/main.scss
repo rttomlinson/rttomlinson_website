@@ -18,10 +18,11 @@ body {
 
 img {
   background-color: $content-background-color;
+  padding: 5px;
 }
 
 section:first-child {
-  height:75vh;
+  height: 65vh;
 }
 
 .display-flex-column {
@@ -37,14 +38,14 @@ section:first-child {
   justify-content: space-around;
 }
 
-.content {
-  height: 75vh;
+.content-wrapper {
+  height: 100%;
 }
 
 .content-text {
   color: $content-text-color;
-  display:inline-block;
-  padding:10px;
+  display: inline-block;
+  padding: 10px;
   font-size: 18px;
 }
 
@@ -59,6 +60,20 @@ section:first-child {
 .margin-bottom-20px {
   margin-bottom: 20px;
 }
+
+.project-holder {
+  margin-bottom: 20px;
+}
+
+.highlightable {
+  
+}
+
+.highlightable:hover {
+  cursor: pointer;
+  opacity: .75;
+}
+
 
 /* Color pallete from http://colorpalettes.net/color-palette-131/ 
 #fff8f0 (Lightest)

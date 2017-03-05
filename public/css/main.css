@@ -7,10 +7,11 @@ body {
   background-color: #FFFFFA; }
 
 img {
-  background-color: #BD5CF3; }
+  background-color: #BD5CF3;
+  padding: 5px; }
 
 section:first-child {
-  height: 75vh; }
+  height: 65vh; }
 
 .display-flex-column {
   display: flex;
@@ -22,8 +23,8 @@ section:first-child {
 .justify-around {
   justify-content: space-around; }
 
-.content {
-  height: 75vh; }
+.content-wrapper {
+  height: 100%; }
 
 .content-text {
   color: #2D081F;
@@ -39,6 +40,13 @@ section:first-child {
 
 .margin-bottom-20px {
   margin-bottom: 20px; }
+
+.project-holder {
+  margin-bottom: 20px; }
+
+.highlightable:hover {
+  cursor: pointer;
+  opacity: .75; }
 
 /* Color pallete from http://colorpalettes.net/color-palette-131/ 
 #fff8f0 (Lightest)
