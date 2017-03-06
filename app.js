@@ -11,14 +11,9 @@ app.use(express.static(path.join(__dirname, "public")));
 app.set('views', path.join(__dirname, "views"));
 app.set('view engine', 'hbs');
 
+let landingPage = require('./routes/index');
 
-
-
-
-app.get("/", function(req, res) {
-    res.render("index", { "title": "Hbs template" });
-});
-
+app.use('/', landingPage);
 
 
 /* Handle 404 response. All other handlers should be above this*/
