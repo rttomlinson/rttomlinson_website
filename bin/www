@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+
+"use strict";
+/**Module dependencies**/
+
+let app = require("../app");
+let http = require("http");
+
+
+/**Get port from environment and store in Express**/
+
+
+let port = (process.env.PORT || "3000");
+app.set('port', port);
+
+/** Create http server **/
+
+let server = http.createServer(app);
+
+/** Listen on port + basic feedback **/
+
+server.listen(port);
+server.on("error", onError);
+server.on("listening", onListening);
+
+/** Callback for onError **/
+
+function onError(err) {
+    console.log(err);
+}
+
+function onListening() {
+    console.log("Server listening on " + server.address().port);
+}
+
+
