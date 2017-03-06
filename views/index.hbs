@@ -1,1 +1,142 @@
-<h1>{{title}}</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee:400i" rel="stylesheet">    
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    </head>
+    <body>
+      <!-- Start Navbar -->
+      <nav class="navbar navbar-default navbar-fixed-top" id="top-navbar">
+        <div class="container-fluid">
+          <!-- Header for collapsed view -->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Renzo Tomlinson, RD</a>
+            <!--Button to toggle menu in collapsed view-->
+            <button type="button" class="navbar-toggle collapsed" id="collapsed-menu-button" data-toggle="collapse" data-target="#page-selection-menu" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger" aria-label="Toggle Navigation"></span></button>
+            <!--End button to toggle menu in collapsed view -->
+          </div> <!-- /.navbar-header -->
+          <!-- End Header for collapsed view-->
+          <!-- Buttons for page and for toggling -->
+          <div class="collapse navbar-collapse" id="page-selection-menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#profile-section">Profile</a></li>
+              <li><a href="#project-section">Projects</a></li>
+              <li><a href="mailto:rttomlinson@gmail.com" target="_blank" rel="noopener noreferrer">Contact</a></li>
+            </ul>
+          </div> <!-- /.navbar-collapse -->
+          <!-- End Buttons for page and for toggling -->
+        </div> <!-- /.container-fluid-->
+      </nav>
+      <!-- End Navbar -->
+      <main>
+        <!-- Main Content -->
+        <section class="container-fluid" id="profile-section"><!--Landing section-->
+          <div class="display-flex-column justify-around content text-center content-wrapper">
+            <div>
+              <h2 class="text-deemphasize">WHO</h4>
+              <p class="content-text">Renzo Tomlinson, RD</p>
+            </div>
+            <div>
+              <h2 class="text-deemphasize">WHAT</h4>
+              <p class="content-text">Software Developer, Dietitian, Minimalist</p>
+            </div>
+            <div>
+              <h2 class="text-deemphasize">WHY</h4>
+              <p class="content-text">Technology + Health + Simplicity</p>
+            </div>
+          </div>
+        </section><!--End landing section-->
+        <hr>
+        <section class="container-fluid" id="project-section"><!-- Projects Section -->
+          <h2>Latest Developments</h2>
+            <div class="row container-for-projects">
+              <div class="col-md-4 project-holder">
+                <a type="button" data-toggle="modal" data-target="#myModal">
+                  <img class="img-responsive center-block highlightable" src=http://placehold.it/400x200 alt="Placeholder image">
+                </a>
+              </div>
+              <div class="col-md-4 project-holder">
+                <a type="button" data-toggle="modal" data-target="#myModal">
+                  <img class="img-responsive center-block highlightable" src=http://placehold.it/400x200 alt="Placeholder image">
+                </a>              </div>
+              <div class="col-md-4 project-holder">
+                <a type="button" data-toggle="modal" data-target="#myModal">
+                  <img class="img-responsive center-block highlightable" src=http://placehold.it/400x200 alt="Placeholder image">
+                </a>              </div>
+          </div> <!-- End Projects Section -->
+        </section>
+        <hr>
+        <section class="container-fluid text-center" id="contact-section"><!-- Start Contact Section -->
+          <h2>Contact</h2>
+            <a href="mailto:rttomlinson@gmail.com" target="_blank" rel="noopener noreferrer" type="button" class="btn btn-action">Send me an email!<i class="fa fa-rocket" aria-hidden="true"></i>
+            </a>
+            <div class="col-xs-12 text-center">
+              <h4>
+              See more at...
+              </h4>
+              <a href="https://github.com/rttomlinson" target="_blank" rel="noopener noreferrer" class="btn btn-default contact-button"><i class="fa fa-github"  aria-hidden="true"></i>GitHub</a>
+              <a href="https://www.linkedin.com/in/renzo-tomlinson-rd-5313481b/" target="_blank" rel="noopener noreferrer" class="btn btn-default contact-button"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a>
+              <a href="https://twitter.com/renzotomlinson" target="_blank" rel="noopener noreferrer" class="btn btn-default contact-button"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a>
+            </div>
+          </div> 
+        </section><!--End Contact Section -->
+      </main>
+      <footer>
+        <div class="container-fluid">
+          <div class="row text-center">
+              <div class="col-xs-12">
+                <p>Made by Renzo Tomlinson. Using Bootstrap, jQuery, Font Awesome.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+            <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal------------------->
+      
+      
+      
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/ccb44d2ec3.js"></script>
+    <script src="javascripts/main.js" rel="stylesheet" type="text/javascript"></script>
+    </body>
+</html>
+    
+    <!-- ToDo List:
+    1. Change font color of main-content pages
+    2. Projects need titles
+    3. Look for more elegant solution to centering Pr
+    3. Check all image alt attributes for correct description
+    4. Attached email form the gmail account
+    5. Figure out a better way to make inputs into blocks. Dont want to target labels. Not good to overwrite BS styling. Maybe just do a custom class.
+    6. Drop down/menu should highlight current section
+    7. Return to top button
+    8. Fix the anchor tags that jump to centain sections of the page. Currently overshoots due to navbar overlapping the top. 
+    -->
