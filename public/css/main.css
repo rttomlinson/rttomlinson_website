@@ -52,11 +52,21 @@ section:first-child {
   opacity: .75; }
 
 #contact-section {
-  color: #2D081F;
-  max-width: 720px; }
+  color: #2D081F; }
 
 .text-18px {
   font-size: 18px; }
+
+.btn-action {
+  background-color: #9D37A1;
+  color: #FFFFFA; }
+
+#project-section {
+  text-align: center; }
+
+@media screen and (min-width: 990px) {
+  #project-section {
+    text-align: left; } }
 
 /* Color pallete from http://colorpalettes.net/color-palette-131/ 
 #fff8f0 (Lightest)
