@@ -21,6 +21,10 @@ img {
   padding: 5px;
 }
 
+footer {
+  padding: 15px 0px;
+}
+
 section:first-child {
   height: 65vh;
 }
@@ -74,6 +78,14 @@ section:first-child {
   opacity: .75;
 }
 
+#contact-section {
+  color: $content-text-color;
+  max-width: 720px;
+}
+
+.text-18px {
+  font-size: 18px;
+}
 
 /* Color pallete from http://colorpalettes.net/color-palette-131/ 
 #fff8f0 (Lightest)

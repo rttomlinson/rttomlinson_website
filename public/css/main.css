@@ -10,6 +10,9 @@ img {
   background-color: #BD5CF3;
   padding: 5px; }
 
+footer {
+  padding: 15px 0px; }
+
 section:first-child {
   height: 65vh; }
 
@@ -47,6 +50,13 @@ section:first-child {
 .highlightable:hover {
   cursor: pointer;
   opacity: .75; }
+
+#contact-section {
+  color: #2D081F;
+  max-width: 720px; }
+
+.text-18px {
+  font-size: 18px; }
 
 /* Color pallete from http://colorpalettes.net/color-palette-131/ 
 #fff8f0 (Lightest)

@@ -7,7 +7,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=ABeeZee:400i" rel="stylesheet">    
-    <link rel="stylesheet" href="public/css/main.css?version=1.5" type="text/css">
+    <link rel="stylesheet" href="public/css/main.css?version=1.9" type="text/css">
     </head>
     <body>
       <!-- Start Navbar -->
@@ -71,24 +71,21 @@
           </div> <!-- End Projects Section -->
         </section>
         <hr>
-        <section class=container-fluid><!-- Start Contact Section -->
+        <section class=container-fluid id="contact-section"><!-- Start Contact Section -->
           <h2>Contact Me</h2>
-          <div class="row content-section" id="contact-section"> 
-            <!-- Currently Hidden --><div class="col-xs-12" id="email-contact-button-holder">
-              <button class="btn btn-default contact-button" id="email-contact-button"><i class="fa fa-rocket" aria-hidden="true"></i>Contact Now!</button>
-            </div> <!-- End Hidden -->
+          <div class="row content-section"> 
             <div class="col-xs-12">
               <form action="#" class="center-block well" id="contact-form">
                 <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="text" name="email" class="form-control" id="email" placeholder="email" aria-describeby="emailhelp">
+                  <label for="email" class="">Email</label>
+                  <input type="text" name="email" class="form-control text-18px" id="email" placeholder="email" aria-describeby="emailhelp">
                 </div>
                 <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea name="message" class="form-control" maxlength="500" form="contact-form" id="message" placeholder="message" aria-describeby="messagehelp"></textarea>
+                  <label for="message" class="">Message</label>
+                  <textarea name="message" class="form-control text-18px" maxlength="500" form="contact-form" id="message" placeholder="message" aria-describeby="messagehelp"></textarea>
                 </div>
                 <div class="text-right">
-                  <input type="submit" class="btn btn-primary" value="Send!">
+                  <button type="submit" class="btn btn-primary">Send it!<i class="fa fa-rocket" aria-hidden="true"></i></button>
                 </div>
               </form>
             </div>
@@ -98,6 +95,7 @@
               </p>
               <button class="btn btn-default contact-button"><i class="fa fa-github"  aria-hidden="true"></i>GitHub</button>
               <button class="btn btn-default contact-button"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</button>
+              <button class="btn btn-default contact-button"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</button>
             </div>
           </div> 
         </section><!--End Contact Section -->
@@ -105,13 +103,7 @@
       <footer>
         <div class="container-fluid">
           <div class="row text-center">
-            <div class="col-xs-12 col-sm-6 col-sm-push-6"> <!--Footer Social Buttons -->
-                <a href="#" class="btn btn-info footer-social-buttons" role="button"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                <a href="#" class="btn btn-info footer-social-buttons" role="button"><i class="fa fa-github"  aria-hidden="true"></i></a>
-                <a href="#" class="btn btn-info footer-social-buttons" role="button"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#" class="btn btn-info footer-social-buttons" role="button"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-              </div> <!-- End Footer Social Buttons -->
-              <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+              <div class="col-xs-12">
                 <p>Made by Renzo Tomlinson. Using Bootstrap, jQuery, Font Awesome.</p>
             </div>
           </div>
