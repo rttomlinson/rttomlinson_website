@@ -57,7 +57,7 @@ router.use(function (req, res, next) {
 
 
 router.get('/', function(req, res, next) {
-    res.render('index', {"project": res.myAPICalls.personalProjects});
+    res.render('index', {"projects": res.myAPICalls.personalProjects});
 });
 
 

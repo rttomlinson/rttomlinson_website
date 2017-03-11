@@ -55,19 +55,13 @@
         <section class="container-fluid" id="project-section"><!-- Projects Section -->
           <h2>Latest Developments</h2>
             <div class="row container-for-projects">
+              {{#each projects as |project|}}
               <div class="col-md-4 project-holder">
-                <a type="button" data-toggle="modal" data-target="#myModal1">
-                  <img class="img-responsive center-block highlightable" src=http://placehold.it/400x200 alt="Placeholder image">
+                <a type="button" data-toggle="modal" data-target="#myModal{{@index}}">
+                  <img class="img-responsive center-block highlightable" src={{project.imageSource}} alt="Placeholder image">
                 </a>
               </div>
-              <div class="col-md-4 project-holder">
-                <a type="button" data-toggle="modal" data-target="#myModal2">
-                  <img class="img-responsive center-block highlightable" src=http://placehold.it/400x200 alt="Placeholder image">
-                </a>              </div>
-              <div class="col-md-4 project-holder">
-                <a type="button" data-toggle="modal" data-target="#myModal3">
-                  <img class="img-responsive center-block highlightable" src=http://placehold.it/400x200 alt="Placeholder image">
-                </a>              </div>
+              {{/each}}
           </div> <!-- End Projects Section -->
         </section>
         <hr>
@@ -96,12 +90,13 @@
         </div>
       </footer>
       
+      {{#each projects as |project|}}
             <!-- Modal -->
-      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="myModal{{@index}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="exampleModalLabel">{{project.name}}</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -110,55 +105,15 @@
               ...
             </div>
             <div class="modal-footer">
+              <button type="button" class="btn btn-primary">See it live</button>
+              <button type="button" class="btn btn-primary">See it on Github</button>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
       </div>
       <!-- End Modal------------------->
-             <!-- Modal -->
-      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Modal------------------->
-            <!-- Modal -->
-      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Modal------------------->
+      {{/each}}
       
       
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
