@@ -113,11 +113,11 @@
               </button>
         </div>
         <div class="modal-body">
-          ...
+          {{project.description}}
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">See it live</button>
-          <button type="button" class="btn btn-primary">See it on Github</button>
+          <a href="{{project.url}}"><button type="button" class="btn btn-primary">See it live</button></a>
+          <a href="{{project.github}}"><button type="button" class="btn btn-primary">See it on Github</button></a>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
