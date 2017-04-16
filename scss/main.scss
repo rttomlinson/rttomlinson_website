@@ -2,14 +2,18 @@
   font-family: 'ABeeZee', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   @include ABeeZee;
 }
 
 $base-color: #FFFFFA;
 $content-base-color: #BD5CF3;
 $content-text-color: #2D081F;
-
 body {
   margin-top: 56px;
   color: #000;
@@ -50,7 +54,7 @@ section:first-child {
   color: $content-text-color;
   display: inline-block;
   padding: 10px;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .text-deemphasize {
@@ -69,9 +73,7 @@ section:first-child {
   margin-bottom: 20px;
 }
 
-.highlightable {
-  
-}
+.highlightable {}
 
 .highlightable:hover {
   cursor: pointer;
@@ -95,13 +97,12 @@ section:first-child {
   text-align: center;
 }
 
-
-
 @media screen and (min-width: 990px) {
   #project-section {
-    text-align:left;
+    text-align: left;
   }
 }
+
 
 /* Color pallete from http://colorpalettes.net/color-palette-131/ 
 #fff8f0 (Lightest)
