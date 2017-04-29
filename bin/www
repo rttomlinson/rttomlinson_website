@@ -32,5 +32,3 @@ function onError(err) {
 function onListening() {
     console.log("Server listening on " + server.address().port);
 }
-
-
